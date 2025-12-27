@@ -1,0 +1,64 @@
+@use '../../variables' as *;
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(111, 111, 156);
+  transition: background-color 0.3s ease;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: $main-font;
+
+  &.scrolled {
+    background-color: $main-dark;
+  }
+
+  .logo_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+
+    img {
+        width: 200px;
+      height: auto;
+    }
+  }
+
+  .nav_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .action_btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+  }
+}
+
