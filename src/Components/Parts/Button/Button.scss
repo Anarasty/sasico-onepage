@@ -1,0 +1,27 @@
+@use '../../../variables' as *;
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: $white;
+  font-size: 1.1rem;
+  border: 1px solid $white;
+  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  font-family: $main-font;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  .btn-icon {
+    width: 20px;
+    height: auto;
+  }
+
+  .btn-text {
+    display: flex;
+    align-items: center;
+  }
+}
+

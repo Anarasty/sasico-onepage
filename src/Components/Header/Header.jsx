@@ -3,6 +3,7 @@ import './Header.scss'
 import logo from '../../assets/logo.svg'
 import lockIcon from '../../assets/images/lock-alt.svg'
 import arrowIcon from '../../assets/images/arrow-right.svg'
+import Button from '../Parts/Button/Button'
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false)
@@ -40,14 +41,12 @@ const Header = () => {
             </li>
         </ul>
         <div className='action_btns'>
-            <button className='login_btn'>
-                <img src={lockIcon} alt="Lock" />
+            <Button icon={lockIcon} iconPosition="left" className="login_btn">
                 Login
-            </button>
-            <button className='signup_btn'>
+            </Button>
+            <Button icon={arrowIcon} iconPosition="right" className="signup_btn">
                 Signup
-                <img src={arrowIcon} alt="Arrow" />
-            </button>
+            </Button>
         </div>
     </nav>
   )
