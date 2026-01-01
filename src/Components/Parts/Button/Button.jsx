@@ -11,11 +11,15 @@ const Button = ({
   return (
     <button className={`btn ${className}`} {...props}>
       {icon && iconPosition === 'left' && (
-        <img src={icon} alt="Icon" className="btn-icon btn-icon-left" />
+        <span className="btn-icon btn-icon-left">
+          <img src={icon} alt="Icon" />
+        </span>
       )}
       <span className="btn-text">{children}</span>
       {icon && iconPosition === 'right' && (
-        <img src={icon} alt="Icon" className="btn-icon btn-icon-right" />
+        <span className="btn-icon btn-icon-right">
+          <img src={icon} alt="Icon" />
+        </span>
       )}
     </button>
   )
