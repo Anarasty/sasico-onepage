@@ -1,0 +1,10 @@
+@use '../../../variables' as *;
+
+.divider {
+  width: 100%;
+  height: 0.5px;
+  background-color: $white;
+  opacity: 0.3;
+  margin: 1.5rem 0;
+}
+
