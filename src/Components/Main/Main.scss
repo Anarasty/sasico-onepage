@@ -101,32 +101,36 @@
   &__clutch {
     display: flex;
     align-items: center;
-    gap: 0.25rem;
-    color: $white;
-    font-family: $main-font;
-    font-weight: 600;
-    font-size: 1.1rem;
 
-    &-logo {
-      color: $white;
-    }
-
-    &-dot {
-      color: #ff4444;
-      font-size: 0.8rem;
+    &-image {
+      height: auto;
+      max-height: 24px;
+      width: auto;
     }
   }
 
-  &__stars {
-    color: $white;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-  }
-
-  &__review-text {
+  &__review-content {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+  }
+
+  &__review-top {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__stars {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+    }
   }
 
   &__review-count {

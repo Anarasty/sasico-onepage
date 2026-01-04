@@ -5,6 +5,8 @@ import Badge from '../Parts/Badge/Badge'
 import Divider from '../Parts/Divider/Divider'
 import arrowIcon from '../../assets/images/arrow-right.svg'
 import mainImage from '../../assets/images/main-img1.png'
+import clutchImage from '../../assets/images/clutch.png'
+import starIcon from '../../assets/star.svg'
 
 const Main = () => {
   return (
@@ -33,14 +35,19 @@ const Main = () => {
           
           <div className="main-hero__reviews">
             <div className="main-hero__clutch">
-              <span className="main-hero__clutch-logo">Clutch</span>
-              <span className="main-hero__clutch-dot">●</span>
+              <img src={clutchImage} alt="Clutch" className="main-hero__clutch-image" />
             </div>
-            <div className="main-hero__stars">
-              ★★★★★
-            </div>
-            <div className="main-hero__review-text">
-              <span className="main-hero__review-count">150+ Reviews</span>
+            <div className="main-hero__review-content">
+              <div className="main-hero__review-top">
+                <div className="main-hero__stars">
+                  <img src={starIcon} alt="Star" />
+                  <img src={starIcon} alt="Star" />
+                  <img src={starIcon} alt="Star" />
+                  <img src={starIcon} alt="Star" />
+                  <img src={starIcon} alt="Star" />
+                </div>
+                <span className="main-hero__review-count">150+ Reviews</span>
+              </div>
               <span className="main-hero__review-subtitle">by over 2500+ global satisfied clients</span>
             </div>
           </div>
